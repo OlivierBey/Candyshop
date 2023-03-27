@@ -1,4 +1,4 @@
-package be.syntra.Candystore.Candy.controllers;
+package candyStore.controllers;
 
 import org.springframework.stereotype.Controller;
 

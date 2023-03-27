@@ -1,11 +1,11 @@
-package be.syntra.Candystore.Candy;
+package candyStore;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 
-import be.syntra.Candystore.Candy.domain.Person;
-import be.syntra.Candystore.Candy.services.PersonService;
+import candyStore.domain.Person;
+import candyStore.services.PersonService;
 
 @SpringBootApplication
 public class CandyApplication {
@@ -15,13 +15,14 @@ public class CandyApplication {
 		SpringApplication.run(CandyApplication.class, args);
 		
 	PersonService service = ctx.getBean(PersonService.class);	
-	Person person1 = service.createPerson("Ben", "Crabbe");
-	Person person2 = service.createPerson("Pol", "Tack");
-	
-	Person person = service.findPersonByid(person1.getId());
-	System.out.println(person.getFirstName());
-	
-	Person person3 = service.createPerson("Nu", "Tella");
+//	Person person1 = service.createPerson("Ben", "Crabbe");
+//	Person person2 = service.createPerson("Pol", "Tack");
+//	
+	Person person = service.findPersonByid(5000);
+//	person.calculateAge();
+//	System.out.println(person.getFirstName());
+//	
+//	Person person3 = service.createPerson("Nu", "Tella");
 	//service.deletePersonById();
 	
 	}

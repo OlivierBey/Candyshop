@@ -1,11 +1,11 @@
-package be.syntra.Candystore.Candy.services;
+package candyStore.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.security.SecurityProperties.User;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import be.syntra.Candystore.Candy.domain.Person;
+import candyStore.domain.Person;
 import jakarta.persistence.EntityManager;
 
 
